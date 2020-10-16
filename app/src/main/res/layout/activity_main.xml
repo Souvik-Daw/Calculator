@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="30dp"
+        android:layout_marginLeft="130dp"
+        android:fontFamily="casual"
+        android:id="@+id/heading"
+        android:textColor="#051F9E"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the first number"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/heading"
+        android:textSize="18dp"
+        android:id="@+id/firstNumberText"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/firstNumberText"
+        android:id="@+id/firstNumberTextInfo"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the second number"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/firstNumberTextInfo"
+        android:textSize="18dp"
+        android:id="@+id/secondNumberText"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondNumberText"
+        android:id="@+id/secondNumberTextInfo"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/secondNumberTextInfo"
+        android:id="@+id/btnPlus"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/secondNumberTextInfo"
+        android:layout_marginLeft="220dp"
+        android:id="@+id/btnminus"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="20dp"
+        android:layout_below="@id/secondNumberTextInfo"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/btnmul"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="20dp"
+        android:layout_below="@id/secondNumberTextInfo"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="220dp"
+        android:id="@+id/btndiv"
+        android:fontFamily="casual"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"
+        android:layout_below="@+id/btndiv"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:id="@+id/resultTest"
+        android:fontFamily="casual"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DummyText"
+        android:layout_below="@+id/resultTest"
+        android:id="@+id/result"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btndiv"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@+id/resultTest"
+        android:fontFamily="casual"
+        android:text="C"
+        android:textSize="18dp" />
+
+
+    "
+
+</RelativeLayout>
